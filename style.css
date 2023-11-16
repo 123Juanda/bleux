@@ -1,0 +1,428 @@
+*{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Menu navegable */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e172f;
+}
+
+
+
+nav button{
+    border: none;
+    height: 40px;
+    width: 120px;
+    color: white;
+    background:linear-gradient(to right, #883fd5, #0c7bd5);
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+  }
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+nav ul li a{
+    color: #807b8a;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+
+#contenedor{
+    padding-right: 15px;
+}
+
+
+
+/* Primera seccion */
+
+#primera-seccion{
+    display: flex;
+}
+
+
+
+
+/*primera seccion izquierda*/
+
+#izquierda{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    height: 650px;
+    width: 900px;
+    background-color: #2e2550;
+}
+
+#izquierda h1{
+    height: 160px;
+    color: white;
+    font-size: 50px;
+}
+
+#izquierda p{
+    height: 50px;
+    color: white;
+}
+
+
+
+/*Botones*/
+#contenedores{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 40px;
+    width: 265px;
+    border: solid 1px #494267;
+    border-radius: 5px;
+}
+
+#contenedores button{
+   width: 130px;
+   border: 2px solid white;
+}
+
+#download{
+    color: #ED62AA;
+}
+
+#features{
+    color: white;
+    background-color: transparent;
+}
+
+
+
+/*primera seccion derecha*/
+
+#derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    background-image: url(hojasFondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#derecha div{
+    width: 660px;
+}
+
+
+/*segunda-seccion*/
+
+#segunda-seccion{
+    height: 565px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f2f7;
+}
+
+#segunda-seccion h2{
+    text-align: center;
+    height: 90px;
+    width: 425px;
+    font-size: 40px;
+    color: #f41486;
+}
+
+#segunda-seccion article h3{
+    height: 60px;
+}
+
+#contenido{
+display: flex;
+justify-content: space-between;
+width: 855px;
+}
+
+article h3{
+    color: #f41486;
+   text-align: center;
+   font-size: 40px;
+   font-weight: 200;
+}
+
+article h4{
+    margin: 15px 0px;
+    color: #e05a9f;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.contenedor-diseño ul{
+list-style: none;
+padding: 0;
+}
+
+.contenedor-diseño li::before{
+    content: "☑";
+    margin-right: 8px;
+}
+
+
+
+/*tercera seccion */
+
+#contenedor-centro{
+    display: flex;
+    justify-content: center;
+}
+
+
+#tercera-seccion{
+    background-color: #1e172f;
+    height: 845px;
+}
+
+#tercera-seccion h3{
+    text-align: center;
+    height: 80px;
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+#parrafo-tercera{
+    height: 110px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#seccion-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 925px;
+}
+
+
+#seccion-cards span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cards{
+    border: 1px solid;
+    width: 285px;
+    height: 560px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#contenedor-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+
+.oferta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    background-color: #f5f5f5;
+}
+
+.precio-grande {
+    font-size: 20px !important; /* ajusta el tamaño de fuente aquí */
+}
+
+.precio-pequeno {
+    font-size: 15px !important; /* ajusta el tamaño de fuente aquí */
+    margin-top: -0.5rem; /* ajusta la distancia vertical entre las dos partes del precio */
+}
+
+.contenedor-lista{
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-lista ul{
+    height: 160px;
+    width: 235px;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.estrella::before{
+    content: "★";
+    margin-right: 30px;
+    font-size: 23px;
+}
+.chulo::before{
+    content: "✔";
+    margin-right: 30px;
+    font-size: 23px;
+}
+.x::before{
+    content: "✖";
+    margin-right: 30px;
+    font-size: 23px;
+}
+
+.contenedor-texto-cards{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+}
+
+.contenedor-texto-cards p{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.contenedor-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #f1f1f1;
+}
+
+.contenedor-boton button{
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background: #2E2550;
+}
+
+.contenedor-boton button:hover {
+    background-image: linear-gradient(to right, #EC61A9, #F13193);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.name {
+    color: #F13193;
+  }
+
+
+footer .items {
+    font-size: 24px; /* Ajusta el tamaño de los íconos según tu preferencia */
+  }
+  
+  footer .items i {
+    color: black; /* Cambia el color de los íconos según tu preferencia */
+    margin: 0 10px; /* Agrega un margen entre los íconos */
+  }
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px){
+
+    #izquierda p{
+        font-size: 14px;
+    }
+    #mi-imagen {
+        display: none; /* Ocultar la imagen en pantallas más pequeñas */
+    }
+
+
+    #seccion-cards{
+       flex-direction: column;
+       align-items: center;
+    }
+
+    #contenido{
+        width: 95%;
+    }
+
+    #contenido h3{
+        font-size: 35px;
+    }
+
+    #parrafo-tercera{
+        font-size: 12px;
+        height: 100%;
+    }
+
+    .contenedor-diseño p{
+        font-size: 15px;
+    }
+
+    .cards{
+        margin-top: 30px;
+    }
+
+    #tercera-seccion{
+        height: 100%;
+    }
+
+    img{
+        width: auto;
+    }
+    nav.navbar ul {
+        display: none; /* Ocultar el menú principal */
+    }
+    
+    /* Mostrar el botón hamburguesa */
+    .hamburger {
+        display: block;
+        /* Estilos para el botón */
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px){
+
+    body{
+        width: 100%;
+    }
+
+}
